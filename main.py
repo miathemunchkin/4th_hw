@@ -11,7 +11,7 @@ HTTP_PORT = 3000
 SOCKET_PORT = 5000
 DATA_FILE = "storage/data.json"
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 
 app.static_folder = STATIC_FOLDER
 app.template_folder = TEMPLATE_FOLDER
